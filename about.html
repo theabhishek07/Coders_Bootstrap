@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Coder-for life</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://source.unsplash.com/80x80/?nature,water" alt="" width="30" height="30"
+              class="d-inline-block align-text-top">
+            Coders
+          </a>
+        </div>
+      </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle active" href="/courses.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">JAVA</a></li>
+              <li><a class="dropdown-item" href="#">JavaScript</a></li>
+              <li><a class="dropdown-item" href="#">Python</a></li>
+              <li><a class="dropdown-item" href="#">WebDevelopment</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/support.html">Support</a></li>
+              <li><a class="dropdown-item" href="/write">Write for us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#LogInModal">LogIn</button>
+          <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+      </div>
+      </div>
+    </div>
+  </nav>
+   <!----LogIn Modal-->
+   <div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="LogInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LogInModalLabel">LogIn To Coders</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">logIn</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+       <!----SignUp Modal-->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpModalLabel">Get your Coders account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                <button type="submit" class="btn btn-primary">SignUp</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">Coders</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon bg-primary bg-gradient">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#collection"></use>
+            </svg>
+          </div>
+          <h2>History</h2>
+          <p>XYZ</p>
+          <a href="#" class="icon-link">
+            More...
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon bg-primary bg-gradient">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#people-circle"></use>
+            </svg>
+          </div>
+          <h2>Founders</h2>
+          <p>About them</p>
+          <a href="#" class="icon-link">
+            More..
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon bg-primary bg-gradient">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#toggles2"></use>
+            </svg>
+          </div>
+          <h2>Idea behind</h2>
+          <p>xyz</p>
+          <a href="#" class="icon-link">
+            More...
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Environment</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#toggles2"></use>
+            </svg>
+          </div>
+          <div>
+            <h2>EAT</h2>
+            <p>EAT ALL DAY</p>
+            <a href="#" class="btn btn-primary">
+              nhi kaam kartai :(
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#cpu-fill"></use>
+            </svg>
+          </div>
+          <div>
+            <h2>SLEEP</h2>
+            <p>SLEEP ALL DAY</p>
+            <a href="#" class="btn btn-primary">
+              nhi kaam kartai :(
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#tools"></use>
+            </svg>
+          </div>
+          <div>
+            <h2>REPEAT</h2>
+            <p>YOU KNOW WHAT I MEAN</p>
+            <a href="#" class="btn btn-primary">
+              nhi kaam kartai :(
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Gallery</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('https://source.unsplash.com/300x300/?room,office desk');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Work space</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="https://source.unsplash.com/100x100/?instagram,share" alt="Bootstrap" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Updated</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>1d ago</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('https://source.unsplash.com/300x300/?cafetaria,coffes');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">cafetaria</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="https://source.unsplash.com/100x100/?instagram,like" alt="Bootstrap" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>updated</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>3d ago</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image:url('https://source.unsplash.com/300x300/?Reception,Reception');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Reception</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="https://source.unsplash.com/100x100/?red heart,red heart" alt="Bootstrap" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>updated</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>5d ago</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>
+  </div>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">Copyright© 2021–2022 Coders</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
